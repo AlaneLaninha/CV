@@ -1,0 +1,127 @@
+/* Definição das fontes */
+body {
+    font-family: 'Arial', sans-serif; /* Fonte para o restante do texto */
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+    background-color: #efb29f;
+}
+
+h1, h2, h3 {
+    font-family: sans-serif, serif; /* Fonte para os títulos */
+}
+
+/* Paleta de cores */
+:root {
+    --cor-principal: #1d1816; /* Cor principal */
+    --cor-secundaria: #e59e88; /* Cor secundária */
+    --cor-destaque: #8a6565; /* Cor de destaque */
+}
+
+a:hover {
+    color: red; /* Cor do texto ao passar o mouse sobre links */
+}
+
+nav a {
+    background-color: #030202;
+    color: rgb(81, 40, 40);
+    text-decoration: none;
+    padding: 8px 12px;
+    margin: 0 5px;
+}
+
+/* Estilização do cabeçalho */
+header {
+    background-color: var(--cor-principal);
+    padding: 20px;
+    text-align: center;
+}
+
+header img {
+    border-radius: 50%;
+    max-width: 150px;
+    height: auto;
+    margin-top: 10px;
+}
+
+.resumo {
+    font-style: italic;
+}
+
+/* Estilização do menu */
+.menu {
+    background-color: var(--cor-secundaria);
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.menu ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-align: center;
+}
+
+.menu ul li {
+    display: inline;
+}
+
+.menu ul li a {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #c4b9b9; /* Cor do texto do menu */
+    text-decoration: none;
+}
+
+.menu ul li a:hover {
+    background-color: var(--cor-destaque);
+    color: #fff; /* Cor do texto ao passar o mouse sobre links no menu */
+}
+
+/* Estilização dos dados do currículo */
+.dados-cv {
+    margin: 20px auto;
+    max-width: 800px;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+}
+
+.dados-cv h2 {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.dados-cv .item {
+    margin-bottom: 20px;
+}
+
+/* Estilização do rodapé */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+footer ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+footer ul li a {
+    color: #fff;
+    text-decoration: none;
+}
