@@ -3,6 +3,150 @@
 <head>
     <title>Currículo</title>
     <link rel="stylesheet" href="CV.css">
+    <style>
+        /* Definição das fontes */
+        body {
+            font-family: 'Arial', sans-serif; /* Fonte para o restante do texto */
+            line-height: 1.5;
+            margin: 0;
+            padding: 0;
+            background-color: #efb29f; /* Cor de fundo principal */
+        }
+
+        h1, h2, h3 {
+            font-family: sans-serif; /* Fonte para os títulos */
+        }
+
+        /* Paleta de cores */
+        :root {
+            --cor-principal: #1d1816; /* Cor principal */
+            --cor-secundaria: #e59e88; /* Cor secundária */
+            --cor-destaque: #8a6565; /* Cor de destaque */
+        }
+
+        a:hover {
+            color: red; /* Cor do texto ao passar o mouse sobre links */
+        }
+
+        nav a {
+            background-color: var(--cor-principal); /* Fundo do menu */
+            color: rgb(81, 40, 40);
+            text-decoration: none;
+            padding: 8px 12px;
+            margin: 0 5px;
+        }
+
+        /* Estilização do cabeçalho */
+        header {
+            background-color: var(--cor-principal); /* Fundo do cabeçalho */
+            padding: 20px;
+            text-align: center;
+        }
+
+        header img {
+            border-radius: 50%;
+            max-width: 150px;
+            height: auto;
+            margin-top: 10px;
+        }
+
+        .resumo {
+            font-style: italic;
+        }
+
+        /* Estilização do menu */
+        .menu {
+            background-color: var(--cor-secundaria); /* Fundo do menu */
+            overflow: hidden;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .menu ul {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+            text-align: center;
+        }
+
+        .menu ul li {
+            display: inline;
+        }
+
+        .menu ul li a {
+            display: inline-block;
+            padding: 10px 20px;
+            color: #c4b9b9; /* Cor do texto do menu */
+            text-decoration: none;
+        }
+
+        .menu ul li a:hover {
+            background-color: var(--cor-destaque); /* Cor de destaque ao passar o mouse */
+            color: #fff; /* Cor do texto ao passar o mouse sobre links no menu */
+        }
+
+        /* Estilização dos dados do currículo */
+        .dados-cv {
+            margin: 20px auto;
+            max-width: 800px;
+            padding: 20px;
+            background-color: #fff; /* Fundo dos dados do currículo */
+            border: 1px solid #ccc;
+        }
+
+        .dados-cv h2 {
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 10px;
+            margin-bottom: 10px;
+        }
+
+        .dados-cv .item {
+            margin-bottom: 20px;
+        }
+
+        /* Estilização do rodapé */
+        footer {
+            background-color: #333; /* Fundo do rodapé */
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        footer ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+
+        footer ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        /* Layout responsivo */
+        @media (min-width: 768px) {
+            /* Estilização do menu para desktop */
+            .menu ul li {
+                display: inline;
+            }
+        }
+
+        @media (max-width: 767px) {
+            /* Estilização do menu para mobile */
+            .menu ul li {
+                display: block;
+            }
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -19,7 +163,7 @@
             <li><a href="#educacao">Educação</a></li>
             <li><a href="#experiencia">Experiência</a></li>
             <li><a href="#habilidades">Habilidades Técnicas</a></li>
-            <li><a href="#ingles">Curso de Inglês Intermediário</a></li>
+            <li><a href="#ingles">Curso</a></li> <!-- Alterado para "Curso" sem "Intermediário" -->
         </ul>
     </nav>
 
@@ -61,7 +205,7 @@
             <h3>Secretária Executiva</h3>
             <p>Câmara Municipal de Itabira</p>
             <p>1993 a 2000</p>
-            <p>Responsável pela gestão de processos administrativos, incluindo organização de eventos e, redação legislativa e ofíciais</p>
+            <p>Responsável pela gestão de processos administrativos, incluindo organização de eventos e redação legislativa e oficial.</p>
         </div>
     </section>
 
@@ -70,24 +214,29 @@
         <ul>
             <li>Suporte de Informática</li>
             <li>Gestão de Projetos</li>
-            <li>Atividades Administrativos</li>
+            <li>Atividades Administrativas</li>
             <li>Gerenciamento de Redes</li>
         </ul>
     </section>
-
+  
     <section id="ingles" class="dados-cv">
-        <h2>Curso de Inglês Intermediário</h2>
-        <p>Wizard</p>
+        <h2>Cursos</h2>
+        
+        <h3>Curso de Inglês Intermediário</h3>
+        Escola: Wizard
     </section>
-
+   </p>
+   <p>
+    <div>
     <footer>
         <ul>
             <li><a href="https://www.linkedin.com/in/alane-de-figueiredo-andrade-ribeiro-652865221?trk=contact-info">LinkedIn</a></li>
             <li><a href="https://github.com/AlaneLaninha">GitHub</a></li>
             <li><a href="https://wwws.cnpq.br/cvlattesweb/PKG_MENU.menu?f_cod=7D9FF3783F2CB8F682B157E20309970B#">Plataforma Lattes</a></li>
         </ul>
+    </div>
         <p>&copy; 2024 - Última atualização: 20 de junho de 2024.</p>
     </footer>
-
+   </p>
 </body>
 </html>

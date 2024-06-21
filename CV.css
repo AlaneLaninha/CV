@@ -4,11 +4,11 @@ body {
     line-height: 1.5;
     margin: 0;
     padding: 0;
-    background-color: #efb29f;
+    background-color: #efb29f; /* Cor de fundo principal */
 }
 
 h1, h2, h3 {
-    font-family: sans-serif, serif; /* Fonte para os títulos */
+    font-family: sans-serif; /* Fonte para os títulos */
 }
 
 /* Paleta de cores */
@@ -23,7 +23,7 @@ a:hover {
 }
 
 nav a {
-    background-color: #030202;
+    background-color: var(--cor-principal); /* Fundo do menu */
     color: rgb(81, 40, 40);
     text-decoration: none;
     padding: 8px 12px;
@@ -32,7 +32,7 @@ nav a {
 
 /* Estilização do cabeçalho */
 header {
-    background-color: var(--cor-principal);
+    background-color: var(--cor-principal); /* Fundo do cabeçalho */
     padding: 20px;
     text-align: center;
 }
@@ -50,7 +50,7 @@ header img {
 
 /* Estilização do menu */
 .menu {
-    background-color: var(--cor-secundaria);
+    background-color: var(--cor-secundaria); /* Fundo do menu */
     overflow: hidden;
     position: fixed;
     width: 100%;
@@ -77,7 +77,7 @@ header img {
 }
 
 .menu ul li a:hover {
-    background-color: var(--cor-destaque);
+    background-color: var(--cor-destaque); /* Cor de destaque ao passar o mouse */
     color: #fff; /* Cor do texto ao passar o mouse sobre links no menu */
 }
 
@@ -86,14 +86,14 @@ header img {
     margin: 20px auto;
     max-width: 800px;
     padding: 20px;
-    background-color: #fff;
+    background-color: #fff; /* Fundo dos dados do currículo */
     border: 1px solid #ccc;
 }
 
 .dados-cv h2 {
     border-bottom: 1px solid #ccc;
     padding-bottom: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 
 .dados-cv .item {
@@ -102,7 +102,7 @@ header img {
 
 /* Estilização do rodapé */
 footer {
-    background-color: #333;
+    background-color: #333; /* Fundo do rodapé */
     color: #fff;
     text-align: center;
     padding: 10px;
@@ -124,4 +124,19 @@ footer ul li {
 footer ul li a {
     color: #fff;
     text-decoration: none;
+}
+
+/* Layout responsivo */
+@media (min-width: 768px) {
+    /* Estilização do menu para desktop */
+    .menu ul li {
+        display: inline;
+    }
+}
+
+@media (max-width: 767px) {
+    /* Estilização do menu para mobile */
+    .menu ul li {
+        display: block;
+    }
 }
